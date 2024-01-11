@@ -15,4 +15,14 @@ function addNote(){
         li.appendChild(span);
     }
     inputBox.value = "";
+    saveData();
 }
+
+function saveData(){
+    localStorage.setItem("data", listContainer.innerHTML);
+}
+
+function showNote(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showNote();
