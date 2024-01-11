@@ -72,3 +72,16 @@ ul li::before{
     width:28px;
     border-radius: 50%;
 }
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #233D4D;
+    line-height: 40px;
+    text-align: center;
+
+}
