@@ -1,0 +1,126 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --light: #EEE;
+    --darkgreen: #588157;
+    --lightgreen: #a3b18a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body {
+    display:block;
+    flex-direction: column;
+    height: 100vh;
+    width: 150vh;
+    background: var(--dark);
+    color: #fff;
+}
+
+header {
+    padding: 1rem 1rem;
+    max-width: 800px;
+    width:100% ;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#new-note-form {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-note-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1rem;
+}
+
+#new-note-input::placeholder {
+    color: gray;
+}
+
+#new-note-submit {
+    color: var(--darkgreen);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.note-list {
+    padding: 1rem;
+}
+
+.note-list h2{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#notes .note {
+
+    display: flex;
+    justify-content:space-between;
+    background-color:#d1d5db;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#notes .note .contenu  {
+    color: #fff;
+    font-size: 0.85rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#notes .note .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.note .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+#note .actions .edit{
+    color: var(--lightgreen);
+} 
+#note .actions .delete {
+    color: #8ac926;
+}

@@ -1,0 +1,19 @@
+{
+    "manifest_version" :3,
+    "name": "MemoNote",
+    "version" : "1.0",
+    "description" : "Extension pour des prises de notes rapides !",
+    "action" : {
+        "default_icon": {
+            "16":"images/icon16.png",
+            "32":"images/icon16.png",
+            "128":"images/icon16.png"
+        },
+        "default_popup" : "index.html"
+    },
+    "icons":{
+        "16":"images/icon16.png",
+        "32":"images/icon16.png",
+        "128":"images/icon16.png"        
+    }
+}   
